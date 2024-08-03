@@ -5,10 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'gray-100': '#f2f4f7',
+      },
+      spacing: {
+        '18': '4.5rem',
+      }
+    },
     borderWidth: {
       DEFAULT: '1px',
-    }
+    },
   },
   plugins: [],
 }

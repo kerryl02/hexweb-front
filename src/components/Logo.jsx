@@ -1,11 +1,19 @@
+import logotext from "../assets/logotext.svg"
+import logomark from "/logomark.svg"
+
 const Logo = () => {
   return (
     <>
-        <a href="#" className="navbar_logo-link w-nav-brand">
-          <div className="hb-logo_componement">
-            <div className="logogmark"><img src="src/assets/logomark.svg" alt="hexweb logomark" /></div>
+      <a href="#" className="p-0 w-nav-brand">
+        <div className="flex w-auto items-center flex-nowrap">
+          <div className="logogmark flex w-8 h-8 justify-center relative overflow-hidden flex-none border-[0.1] border-solid border-[#dae0e8] rounded-lg">
+            <img src={logomark} alt="hexweb logomark" />
           </div>
-        </a>
+          <div className="flex w-auto items-center ">
+            <img  className="" src={logotext} alt="hexweb logotext" />
+          </div>
+        </div>
+      </a>
     </>
   )
 }
