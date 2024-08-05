@@ -1,5 +1,5 @@
 
-const Article = ({h1, h2, p, button}) => {
+/*const Article = ({h1, h2, p, button}) => {
     
   return (
     <>
@@ -11,4 +11,4 @@ const Article = ({h1, h2, p, button}) => {
   )
 }
 
-export default Article;
+export default Article;*/

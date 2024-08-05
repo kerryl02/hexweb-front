@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'nunito-sans': ['"Nunito Sans"', 'sans-serif'],
+      },
       colors: {
         'gray-100': '#f2f4f7',
       },
