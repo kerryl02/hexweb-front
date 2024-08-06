@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'nunito-sans': ['"Nunito Sans"', 'sans-serif'],
+        'kallisto': ['Kallisto', 'sans-serif']
       },
       colors: {
         'gray-100': '#f2f4f7',

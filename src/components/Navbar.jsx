@@ -15,7 +15,7 @@ const Header = () => {
               <li key={item.label}>
                 <a 
                 href={item.label}
-                className="font-nunito-sans leading-normal text-lg text-slate-gray">
+                className="font-nunito-sans font-semibold leading-normal text-lg text-slate-gray">
                   {item.label}
                 </a>
               </li>
