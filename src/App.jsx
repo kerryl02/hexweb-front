@@ -6,6 +6,7 @@ import BlockL from "@sections/BlockL"
 import Blog from "@sections/Blog"
 import Cta from "@sections/Cta"
 import Footer from "@components/Footer"
+import { projects } from "@constants";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero products={projects} />
       <References />
       <BlockR />
       <BlockL />

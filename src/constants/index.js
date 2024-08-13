@@ -9,22 +9,66 @@ export const navLinks = [
     { href: "#contact-us", label: "Devis" },
 ];
 
-/* const shoes = [
+export const projects = [
     {
-        thumbnail: thumbnailShoe1,
-        bigShoe: bigShoe1,
+      title: "Project 1",
+      link: "/src/assets/image/1",
+      thumbnail: "https://cdn.prod.website-files.com/615f5935af74848be6f33e1f/6356f474040e32fada16cadd_image1.png",
     },
     {
-        thumbnail: thumbnailShoe2,
-        bigShoe: bigShoe2,
+      title: "Project 2",
+      link: "/projects/project-2",
+      thumbnail: "https://images.prismic.io/prismic-main/65bbc9dd615e73009ec43469_2prismicLMSapp.png?auto=format,compress",
     },
     {
-        thumbnail: thumbnailShoe3,
-        bigShoe: bigShoe3,
+      title: "Project 3",
+      link: "/projects/project-3",
+      thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
     },
-];
+    {
+        title: "Project 3",
+        link: "/projects/project-3",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
+    },
+    {
+        title: "Project 3",
+        link: "/projects/project-3",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
+    },
+    {
+        title: "Project 3",
+        link: "/projects/project-3",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
+    },
+    {
+        title: "Project 3",
+        link: "/projects/project-3",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
+    },
+    {
+        title: "Project 3",
+        link: "/projects/project-3",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
+    },
+    {
+        title: "Project 3",
+        link: "/projects/project-3",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
+    },
+    {
+        title: "Project 3",
+        link: "/projects/project-3",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
+    },
+    {
+        title: "Project 3",
+        link: "/projects/project-3",
+        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
+    },
+    // Add more projects as needed
+  ];
 
-export const statistics = [
+/*export const statistics = [
     { value: '1k+', label: 'Brands' },
     { value: '500+', label: 'Shops' },
     { value: '250k+', label: 'Customers' },
