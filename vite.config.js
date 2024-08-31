@@ -11,6 +11,7 @@ export default defineConfig({
     alias: {
       '@components': '/src/components',
       '@sections': '/src/components/sections',
+      '@navbar': '/src/components/navbar',
       '@constants': '/src/constants'
     },
   },

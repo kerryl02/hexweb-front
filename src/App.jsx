@@ -1,4 +1,4 @@
-import Navbar from "@components/Navbar"
+import Navbar from "@navbar/Navbar"
 import Hero from "@sections/Hero"
 import References from "@sections/References"
 import BlockR from "@sections/BlockR"
