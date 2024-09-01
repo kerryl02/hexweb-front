@@ -10,3 +10,9 @@ body {
     background-color: #F9F9F9;
     color: #333333;
 }
+
+
+.container {
+    max-width: 80rem;
+    width: auto;
+}
