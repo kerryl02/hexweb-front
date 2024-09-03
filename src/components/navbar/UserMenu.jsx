@@ -1,6 +1,6 @@
-import { hamburger } from "../../assets/icons";
+import { hamburger } from "@assets/icons";
 import { useState, useCallback } from "react";
-import { navLinks } from "../../constants";
+import { navLinks } from "@constants";
 import Logo from "../Logo";
 
 const UserMenu = () => {

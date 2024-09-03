@@ -12,7 +12,8 @@ export default defineConfig({
       '@components': '/src/components',
       '@sections': '/src/components/sections',
       '@navbar': '/src/components/navbar',
-      '@constants': '/src/constants'
+      '@constants': '/src/constants',
+      '@assets': '/src/assets'
     },
   },
   build: {
