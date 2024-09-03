@@ -4,10 +4,10 @@ const Hero = () => {
   return (
     <Section>
       <div>
-        <div className="container z-30 grid grid-cols-4 py-12 sm:grid-cols-8 lg:grid-cols-12 gap-x-4 gap-y-10 place-self-end lg:py-12">
+        <div className="container z-30 grid grid-cols-4 pb-12 sm:grid-cols-8 lg:grid-cols-12 gap-x-4 gap-y-10 place-self-end lg:py-12">
           <div className="flex flex-col col-span-4 col-start-1 xl:col-span-6 gap-y-10 sm:col-span-6 md:col-span-5">
             <h1 className="text-black tracking-tight text-[2.5rem] font-bold lg:text-5xl xl:text-[3.5rem] font-kallisto leading-[3.5rem]">
-              Lancez votre succès en ligne avec un site web qui booste votre visibilité.
+              Lancez votre succès en ligne avec un site web.
             </h1>
             <p className="text-lg font-semibold lg:text-xl">
               Créez ou optimisez votre site web pour attirer plus de clients et booster vos résultats.
