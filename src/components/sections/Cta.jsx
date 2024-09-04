@@ -3,9 +3,12 @@ import Section from "./Section"
 
 const Cta = () => {
   return (
-    <Section >
-        Call to action
-    </Section>
+    <div className=" bg-sky-100">
+      <Section >
+          Call to action
+      </Section>
+      
+    </div>
   )
 }
 
