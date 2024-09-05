@@ -3,7 +3,7 @@ import { benefit1, benefit2, benefit3 } from '@assets/image'
 
 export const References = () => {
   return (
-    <div className="my-12 bg-sky-100">
+    <div className=" bg-sky-100">
       <Section>
         <div>
           <div className='flex justify-center'>
