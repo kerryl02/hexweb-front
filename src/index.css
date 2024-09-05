@@ -93,8 +93,8 @@ body {
 }
 
 .swiper-slide img {
-  width: 37rem;
-  height: 42rem;
+  width: 42rem;
+  height: 37rem;
   border-radius: 2rem;
   object-fit: cover;
 }
