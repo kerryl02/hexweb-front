@@ -1,5 +1,7 @@
 import Logo from "../Logo";
 import { navLinks } from "@constants";
+import { Link } from "react-router-dom";
+import ButtonCta from "../ButtonCta";
 
 import UserMenu from "./UserMenu";
 
@@ -13,23 +15,18 @@ const Navbar = () => {
             <ul className="flex items-center justify-center flex-1 gap-12 max-lg:hidden">
               {navLinks.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={item.label}
+                  <Link
+                    to={item.link}
                     className="text-lg font-semibold leading-normal font-nunito-sans text-slate-gray"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li className="min-w-56">
-                <a
-                  href=""
-                  className=" relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium hover:text-gray-900 rounded-full group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
-                >
-                  <span className="font-bold text-lg relative px-5 py-2.5 transition-all ease-in duration-75 group-hover:bg-white dark:bg-gray-900 rounded-full bg-opacity-0 font-nunito-sans">
-                    Commencez Maintenant
-                  </span>
-                </a>
+                <ButtonCta>
+                  Commencez Maintenant
+                </ButtonCta>
               </li>
             </ul>
           </div>

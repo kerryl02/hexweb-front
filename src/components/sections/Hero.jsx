@@ -1,6 +1,7 @@
 import Section from "./Section";
 import video from "../../assets/video.webm";
 import svg from "../../assets/td.png";
+import ButtonCta from "../ButtonCta";
 
 const Hero = () => {
   return (
@@ -34,14 +35,9 @@ const Hero = () => {
           </div>
           <div className="container z-10 flex flex-col justify-end sm:flex-row gap-y-8 gap-x-4">
             <div className="flex flex-col items-center justify-end basis-1/2 md:flex-row gap-x-4 gap-y-4">
-              <a
-                href=""
-                className=" relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium hover:text-gray-900 rounded-full group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
-              >
-                <span className="font-bold text-lg relative px-5 py-2.5 transition-all ease-in duration-75 group-hover:bg-white dark:bg-gray-900 rounded-full bg-opacity-0 font-nunito-sans">
-                  Choisissez Votre Plan
-                </span>
-              </a>
+              <ButtonCta link={"/Tarification"}>
+                Choisissez Votre Plan
+              </ButtonCta>
               <p className="text-sm leading-5 tracking-tight text-center text-gray-50 md:w-52 sm:text-left font-nunito-sans">
                 20% de réduction sur votre premier site web sur mesure !
               </p>

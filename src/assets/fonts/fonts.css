@@ -41,13 +41,13 @@
 @font-face {
     font-family: 'Kallisto';
     src: url('./Kallisto-Medium-Italic.otf') format('opentype');
-    font-weight: normal;
+    font-weight: medium;
     font-style: normal;
 }
 @font-face {
     font-family: 'Kallisto';
     src: url('./Kallisto-Medium.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {

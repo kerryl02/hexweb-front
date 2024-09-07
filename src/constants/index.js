@@ -2,10 +2,10 @@
 //import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#about-us", label: "Services" },
-    { href: "#pricings", label: "Tarification" },
-    { href: "#about-us", label: "Références" },
-    { href: "#products", label: "Contact" },
+    { href: "#about-us", label: "Services", link: "/Services" },
+    { href: "#pricings", label: "Tarification", link: "/Tarification" },
+    { href: "#about-us", label: "Références", link: "/Références" },
+    { href: "#products", label: "Contact", link: "/Contact" },
 ];
 
 export const projects = [
