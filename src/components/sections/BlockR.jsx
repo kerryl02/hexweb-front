@@ -54,7 +54,7 @@ const BlockR = () => {
             </p>
           </div>
           <div className="pt-4">
-            <ButtonCta link="#Contact">testcshd</ButtonCta>
+            <ButtonCta link="#Contact">Payer 1m</ButtonCta>
           </div>
         </div>
         <div className="w-1/3 h-[300px]">
