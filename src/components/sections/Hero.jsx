@@ -1,6 +1,6 @@
 import Section from "./Section";
 import video from "../../assets/video.webm";
-import svg from "../../assets/td.png";
+/*import svg from "../../assets/td.png";*/
 import ButtonCta from "../ButtonCta";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
 
         {/* Optional overlay for better contrast */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-5"></div>
-        <div className="absolute z-50 h-20 top-[80%] left-[43%]"><img className="z-50 object-contain w-full h-full" src={svg} alt="" /></div>
+        {/*<div className="absolute z-50 h-20 top-[80%] left-[43%]"><img className="z-50 object-contain w-full h-full" src={svg} alt="" /></div>*/}
       <Section className="h-[400px]">
         <div className="flex flex-col justify-between h-full">
           <div className="container z-10 grid grid-cols-4 pb-12 sm:grid-cols-8 lg:grid-cols-12 gap-x-4 gap-y-10 place-self-end lg:py-12">

@@ -2,7 +2,7 @@ import Navbar from "@navbar/Navbar";
 import Hero from "@sections/Hero";
 import References from "@sections/References";
 import BlockR from "@sections/BlockR";
-import Blog from "@sections/Blog";
+/*import Blog from "@sections/Blog";*/
 import Form from "@sections/Form";
 import Footer from "@components/Footer";
 import { projects } from "@constants";
@@ -16,8 +16,8 @@ function HomePage() {
       <Hero products={projects} />
       <References />
       <BlockR />
-      <Blog />
       <SliderProject />
+      {/*<Blog />*/}
       <Faq />
       <Form />
       <Footer />
