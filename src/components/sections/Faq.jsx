@@ -18,7 +18,7 @@ const AccordionItem = ({ idx, title, content, activeTab, setActiveTab, className
         className="w-full p-4 text-left cursor-pointer"
       >
         <div className={className ? `${className} flex items-center` : `flex items-center justify-between`}>
-          <h2 className="tracking-wide">{title}</h2>
+          <h3 className="tracking-wide">{title}</h3>
           <span
             className={`transition-transform duration-500 transform fill-current ${
               activeTab === idx ? "-rotate-180" : ""
@@ -106,9 +106,9 @@ const Faq = () => {
     <Section>
       <div className="mx-auto tracking-wide">
         {/* Title */}
-        <div className="flex justify-between text-2xl lg:text-[2rem] font-bold font-kallisto">
+        <h2 className="flex justify-between text-2xl lg:text-[2rem] font-bold font-kallisto">
           Tout Savoir sur Nos Services de Création, Refonte de Sites Web
-        </div>
+        </h2>
 
         {/* Accordion */}
         <div className="grid gap-3 pt-12 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-6">
