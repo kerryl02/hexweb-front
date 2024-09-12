@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import styled from 'styled-components'
 
 const ButtonComponent = styled.button`
@@ -77,7 +77,7 @@ const Button = ({ type, variant, className, id, onClick, size, children}) => {
     id={id} onClick={onClick} size={size}
     >
         {children}
-        <i className="mdi mdi-circle-outline mr-2 text-xl align-middle leading-none"></i>
+        <i className="mr-2 text-xl leading-none align-middle mdi mdi-circle-outline"></i>
     </ButtonComponent>
   )
 }

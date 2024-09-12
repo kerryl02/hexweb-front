@@ -5,7 +5,7 @@ import ButtonCta from "../ButtonCta";
 
 const Hero = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full h-[400px]">
         <video
           autoPlay
           muted
@@ -20,8 +20,8 @@ const Hero = () => {
         {/* Optional overlay for better contrast */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-5"></div>
         <div className="absolute z-50 h-20 top-[80%] left-[43%]"><img className="z-50 object-contain w-full h-full" src={svg} alt="" /></div>
-      <Section>
-        <div>
+      <Section className="h-[400px]">
+        <div className="flex flex-col justify-between h-full">
           <div className="container z-10 grid grid-cols-4 pb-12 sm:grid-cols-8 lg:grid-cols-12 gap-x-4 gap-y-10 place-self-end lg:py-12">
             <div className="flex flex-col col-span-4 col-start-1 xl:col-span-6 gap-y-10 sm:col-span-6 md:col-span-5">
               <h1 className="text-white tracking-tight text-[2.5rem] font-bold lg:text-5xl xl:text-[3.5rem] font-kallisto leading-[3.5rem]">
