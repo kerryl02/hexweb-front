@@ -13,7 +13,7 @@ const SliderProject = () => {
   return (
     <Section className="!px-0 max-w-none">
         <div className='container'>
-            <h2 className='text-center text-2xl lg:text-[2rem] font-bold font-kallisto'>Slider project</h2>
+            <h2 className='text-black text-center text-2xl lg:text-[2rem] font-bold font-kallisto'>Découvrez Nos Projets qui Transforment le Digital</h2>
             <Swiper 
                 effect={'coverflow'}
                 grabCursor={true}

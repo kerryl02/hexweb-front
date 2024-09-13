@@ -7,13 +7,13 @@ export const References = () => {
     <Section>
       <div>
         <div className="flex justify-center">
-          <h2 className="text-2xl lg:text-[2rem] font-bold font-kallisto">
+          <h2 className="text-black text-2xl lg:text-[2rem] font-bold font-kallisto">
             Découvrez Comment Notre Site Web Peut Transformer Votre Business !
           </h2>
         </div>
         <div className="grid grid-cols-3 gap-4 pt-12 sm:grid-cols-6">
           {/* Card des bénéfit*/}
-          <div className="flex flex-col col-span-3 sm:col-span-2">
+          <div className="flex flex-col col-span-3 p-4 bg-white rounded-none shadow-2xl sm:col-span-2 md:rounded-2xl md:p-8">
             <div className="flex justify-center">
               <div className="w-28 lg:w-36">
                 <img src={benefit1} alt="" />
@@ -24,7 +24,7 @@ export const References = () => {
               ciblée de votre site.
             </p>
           </div>
-          <div className="flex flex-col col-span-3 sm:col-span-2">
+          <div className="flex flex-col col-span-3 p-4 bg-white rounded-none shadow-2xl sm:col-span-2 md:rounded-2xl md:p-8">
             <div className="flex justify-center">
               <div className="w-28 lg:w-36 ">
                 <img src={benefit2} alt="" />
@@ -35,7 +35,7 @@ export const References = () => {
               sur la performance.
             </p>
           </div>
-          <div className="flex flex-col col-span-3 sm:col-span-2">
+          <div className="flex flex-col col-span-3 p-4 bg-white rounded-none shadow-2xl sm:col-span-2 md:rounded-2xl md:p-8">
             <div className="flex justify-center">
               <div className="w-28 lg:w-36">
                 <img src={benefit3} alt="" />

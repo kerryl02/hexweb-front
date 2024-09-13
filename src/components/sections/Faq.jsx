@@ -106,7 +106,7 @@ const Faq = () => {
     <Section>
       <div className="mx-auto tracking-wide">
         {/* Title */}
-        <h2 className="flex justify-between text-2xl lg:text-[2rem] font-bold font-kallisto">
+        <h2 className="text-black flex justify-between text-2xl lg:text-[2rem] font-bold font-kallisto">
           Tout Savoir sur Nos Services de Création, Refonte de Sites Web
         </h2>
 
