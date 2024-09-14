@@ -11,9 +11,9 @@ export const navLinks = [
     { href: "#Optimisation-SEO-et-Référencement-Naturel", label: "Optimisation SEO et Référencement Naturel", link: "/Contact" },
     { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "Maintenance et Sécurité de Sites Web", link: "/Contact" },
     { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "Nos Accompagnement Web", link: "/Contact" },
-    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "Maintenance et Sécurité de Sites Web", link: "/Contact" },
-    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "Maintenance et Sécurité de Sites Web", link: "/Contact" },
-    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "Maintenance et Sécurité de Sites Web", link: "/Contact" },
+    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "1", link: "/Contact" },
+    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "2", link: "/Contact" },
+    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "3", link: "/Contact" },
 ];
 
 export const projects = [

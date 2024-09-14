@@ -17,7 +17,7 @@ const Navbar = () => {
                 <li key={item.label} className="flex items-center">
                   <Link
                     to={item.link}
-                    className="text-lg font-semibold leading-normal font-nunito-sans text-slate-gray"
+                    className="text-lg font-semibold leading-normal hover:text-transparent font-nunito-sans text-slate-gray hover:bg-gradient-to-br hover:from-cyan-500 hover:to-blue-500 hover:bg-clip-text"
                   >
                     {item.label}
                   </Link>

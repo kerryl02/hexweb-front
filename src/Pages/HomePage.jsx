@@ -8,6 +8,7 @@ import Footer from "@components/Footer";
 import { projects } from "@constants";
 import SliderProject from "@components/sections/SliderProject";
 import Faq from "@components/sections/Faq";
+import Services from "@components/sections/Services";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <References />
       <BlockR />
       <SliderProject />
+      <Services />
       {/*<Blog />*/}
       <Faq />
       <Form />

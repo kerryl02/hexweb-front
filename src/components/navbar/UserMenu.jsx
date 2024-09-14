@@ -19,12 +19,11 @@ const UserMenu = () => {
           <ul className="max-sm:px-4">
             <div className="sm:hidden">
                 <Logo />
-
             </div>
-            {navLinks.map((item) => (
+            {navLinks.slice(0, 4).map((item) => (
               <li key={item.label} className="">
                 <a
-                  href={item.label}
+                  to={item.link}
                   className="flex items-center justify-center w-full h-full px-4 py-3 text-lg font-semibold leading-normal transition hover:bg-neutral-100 font-nunito-sans text-slate-gray"
                 >
                   {item.label}

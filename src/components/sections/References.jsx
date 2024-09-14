@@ -3,7 +3,7 @@ import { benefit1, benefit2, benefit3 } from "@assets/image";
 
 export const References = () => {
   return (
-    <div className=" bg-sky-100">
+    <div className=" bg-gradient-to-br from-cyan-100 to-blue-100">
     <Section>
       <div>
         <div className="flex justify-center">
@@ -13,7 +13,7 @@ export const References = () => {
         </div>
         <div className="grid grid-cols-3 gap-4 pt-12 sm:grid-cols-6">
           {/* Card des bénéfit*/}
-          <div className="flex flex-col col-span-3 p-4 bg-white rounded-none shadow-2xl sm:col-span-2 md:rounded-2xl md:p-8">
+          <div className="flex flex-col col-span-3 p-4 rounded-none shadow-2xl bg-[#f5f5f5] sm:col-span-2 md:rounded-2xl md:p-8">
             <div className="flex justify-center">
               <div className="w-28 lg:w-36">
                 <img src={benefit1} alt="" />
@@ -24,7 +24,7 @@ export const References = () => {
               ciblée de votre site.
             </p>
           </div>
-          <div className="flex flex-col col-span-3 p-4 bg-white rounded-none shadow-2xl sm:col-span-2 md:rounded-2xl md:p-8">
+          <div className="flex flex-col col-span-3 p-4 bg-[#f5f5f5] rounded-none shadow-2xl sm:col-span-2 md:rounded-2xl md:p-8">
             <div className="flex justify-center">
               <div className="w-28 lg:w-36 ">
                 <img src={benefit2} alt="" />
@@ -35,7 +35,7 @@ export const References = () => {
               sur la performance.
             </p>
           </div>
-          <div className="flex flex-col col-span-3 p-4 bg-white rounded-none shadow-2xl sm:col-span-2 md:rounded-2xl md:p-8">
+          <div className="flex flex-col col-span-3 p-4 bg-[#f5f5f5] rounded-none shadow-2xl sm:col-span-2 md:rounded-2xl md:p-8">
             <div className="flex justify-center">
               <div className="w-28 lg:w-36">
                 <img src={benefit3} alt="" />

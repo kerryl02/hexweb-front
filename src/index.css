@@ -106,7 +106,7 @@ body {
 
 .slider-controler {
   position: relative;
-  bottom: 2rem;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,7 +114,11 @@ body {
 
 .slider-controler .swiper-button-next {
   left: 58% !important;
-  transform: translateX(-58%) !important;
+  transform: translateX(-25%) !important;
+}
+.slider-controler .swiper-button-prev {
+  left: 40% !important;
+  transform: translateX(-15%) !important;
 }
 
 @media (max-width: 990px) {

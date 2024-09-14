@@ -31,7 +31,7 @@ const SliderProject = () => {
                 pagination={{el:'.swiper-pagination',clickable:true}}
                 navigation={{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev',clickable:true,}}
                 modules={[EffectCoverflow,Pagination,Navigation]}
-                className='h-[52rem] relative pt-12'
+                className='h-[45rem] relative pt-12'
             >
                 <SwiperSlide>
                     <img src={slide_img} alt="" />
