@@ -6,9 +6,9 @@ import BlockR from "@sections/BlockR";
 import Form from "@sections/Form";
 import Footer from "@components/Footer";
 import { projects } from "@constants";
-import SliderProject from "@components/sections/SliderProject";
-import Faq from "@components/sections/Faq";
-/*import Services from "@components/sections/Services";*/
+import SliderProject from "@sections/SliderProject";
+import Faq from "@sections/Faq";
+import Services from "@sections/Services";
 
 function HomePage() {
   return (
@@ -18,7 +18,7 @@ function HomePage() {
       <Benefits />
       <BlockR />
       <SliderProject />
-      {/*<Services />*/}
+      <Services />
       {/*<Blog />*/}
       <Faq />
       <Form />
