@@ -1,9 +1,17 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+
 import React, { useState, useRef } from "react";
 import Section from "./Section";
 
-// eslint-disable-next-line react/prop-types
-const AccordionItem = ({ idx, title, content, activeTab, setActiveTab, className }) => {
+const AccordionItem = ({
+  idx,
+  title,
+  content,
+  activeTab,
+  setActiveTab,
+  className,
+}) => {
   const contentRef = useRef(null);
 
   // Handler for toggling the accordion
@@ -17,7 +25,13 @@ const AccordionItem = ({ idx, title, content, activeTab, setActiveTab, className
         onClick={handleClick}
         className="w-full p-4 text-left cursor-pointer"
       >
-        <div className={className ? `${className} flex items-center` : `flex items-center justify-between`}>
+        <div
+          className={
+            className
+              ? `${className} flex items-center`
+              : `flex items-center justify-between`
+          }
+        >
           <h3 className="tracking-wide">{title}</h3>
           <span
             className={`transition-transform duration-500 transform fill-current ${
@@ -55,50 +69,60 @@ const Faq = () => {
   const faqs = [
     {
       id: 1,
-      title: "Pourquoi choisir Hexweb pour la création ou la refonte de votre site web ?",
+      title:
+        "Pourquoi choisir Hexweb pour la création ou la refonte de votre site web ?",
       content:
         "Hexweb se distingue par son expertise en SEO, UX/UI, et développement web sur mesure. Nous créons des sites modernes, performants et adaptés à vos objectifs, tout en vous accompagnant de la conception à la mise en ligne. Nos solutions sont conçues pour maximiser votre visibilité en ligne et augmenter vos conversions grâce à une stratégie digitale complète.",
     },
     {
       id: 2,
       title: "Comment puis-je suivre l'avancement de mon projet ?",
-      content: "Nous fournissons un suivi régulier à chaque étape du projet, avec des rapports clairs et des points de contact réguliers pour vous tenir informé de l'avancement.",
+      content:
+        "Nous fournissons un suivi régulier à chaque étape du projet, avec des rapports clairs et des points de contact réguliers pour vous tenir informé de l'avancement.",
     },
     {
       id: 3,
       title: "Offrez-vous des services de maintenance après la mise en ligne ?",
-      content: "Oui, nous proposons des services de maintenance et de mises à jour régulières pour garantir la sécurité, la performance, et l'actualisation de votre site.",
+      content:
+        "Oui, nous proposons des services de maintenance et de mises à jour régulières pour garantir la sécurité, la performance, et l'actualisation de votre site.",
     },
     {
       id: 4,
       title:
         "Comment puis-je obtenir un devis pour la création ou la refonte de mon site web ?",
-      content: "Vous pouvez nous contacter via notre formulaire en ligne ou nous appeler directement. Nous vous fournirons un devis personnalisé basé sur vos besoins et objectifs.",
+      content:
+        "Vous pouvez nous contacter via notre formulaire en ligne ou nous appeler directement. Nous vous fournirons un devis personnalisé basé sur vos besoins et objectifs.",
     },
     {
       id: 5,
       title: "Pourquoi devrais-je envisager une refonte de mon site web ?",
-      content: "Une refonte de site web est souvent nécessaire si votre site est obsolète, peu performant, ou mal adapté aux mobiles. La refonte permet d'améliorer l'esthétique, la vitesse de chargement, l'expérience utilisateur (UX), et le référencement (SEO), augmentant ainsi vos chances de convertir des visiteurs en clients.",
+      content:
+        "Une refonte de site web est souvent nécessaire si votre site est obsolète, peu performant, ou mal adapté aux mobiles. La refonte permet d'améliorer l'esthétique, la vitesse de chargement, l'expérience utilisateur (UX), et le référencement (SEO), augmentant ainsi vos chances de convertir des visiteurs en clients.",
     },
     {
       id: 6,
       title: "Combien coûte la création ou la refonte d'un site web ?",
-      content: "Le coût dépend de la complexité du projet, des fonctionnalités souhaitées, et de la taille du site. Après une analyse de vos besoins, nous fournissons un devis détaillé et transparent. Nos services sont personnalisés pour correspondre à votre budget tout en garantissant un excellent rapport qualité/prix.",
+      content:
+        "Le coût dépend de la complexité du projet, des fonctionnalités souhaitées, et de la taille du site. Après une analyse de vos besoins, nous fournissons un devis détaillé et transparent. Nos services sont personnalisés pour correspondre à votre budget tout en garantissant un excellent rapport qualité/prix.",
     },
     {
       id: 7,
       title: "Quels services proposez-vous pour la création de sites web ?",
-      content: "Nous offrons des services complets de création de sites web, incluant le design personnalisé, le développement responsive, l'intégration de fonctionnalités avancées, et l'optimisation SEO pour améliorer votre visibilité en ligne.",
+      content:
+        "Nous offrons des services complets de création de sites web, incluant le design personnalisé, le développement responsive, l'intégration de fonctionnalités avancées, et l'optimisation SEO pour améliorer votre visibilité en ligne.",
     },
     {
       id: 8,
       title: "Quelle est la durée moyenne pour créer un site web ?",
-      content: "Le délai de création varie selon la taille et la complexité du projet. En général, un site web standard peut être développé en 4 à 8 semaines, incluant la phase de conception, de développement, et de tests. Pour les projets plus complexes comme les sites e-commerce, cela peut prendre un peu plus de temps.",
+      content:
+        "Le délai de création varie selon la taille et la complexité du projet. En général, un site web standard peut être développé en 4 à 8 semaines, incluant la phase de conception, de développement, et de tests. Pour les projets plus complexes comme les sites e-commerce, cela peut prendre un peu plus de temps.",
     },
     {
       id: 9,
-      title: "Quelles technologies utilisez-vous pour le développement de sites web ?",
-      content: "Le délai de création varie selon la taille et la complexité du projet. En général, un site web standard peut être développé en 4 à 8 semaines, incluant la phase de conception, de développement, et de tests. Pour les projets plus complexes comme les sites e-commerce, cela peut prendre un peu plus de temps.",
+      title:
+        "Quelles technologies utilisez-vous pour le développement de sites web ?",
+      content:
+        "Le délai de création varie selon la taille et la complexité du projet. En général, un site web standard peut être développé en 4 à 8 semaines, incluant la phase de conception, de développement, et de tests. Pour les projets plus complexes comme les sites e-commerce, cela peut prendre un peu plus de temps.",
     },
   ];
 
@@ -106,13 +130,18 @@ const Faq = () => {
     <Section>
       <div className="mx-auto tracking-wide">
         {/* Title */}
-        <h2 className="text-black flex justify-between text-2xl lg:text-[2rem] font-bold font-kallisto">
-          Tout Savoir sur Nos Services de Création, Refonte de Sites Web
-        </h2>
+        <div className="flex items-center">
+          <span className="mx-4 text-transparent text-black text-7xl bg-gradient-to-br from-cyan-500 to-blue-500 bg-clip-text">
+            —
+          </span>
+          <h2 className="text-black flex justify-between text-2xl lg:text-[2rem] font-bold font-kallisto">
+            Tout Savoir sur Nos Services de Création, Refonte de Sites Web
+          </h2>
+        </div>
 
         {/* Accordion */}
         <div className="grid gap-3 pt-12 text-lg leading-6 text-gray-800 md:gap-8 md:grid-cols-6">
-        <div className="col-span-6 space-y-6">
+          <div className="col-span-6 space-y-6">
             {faqs.slice(0, 1).map((faq) => (
               <AccordionItem
                 key={faq.id}
@@ -121,12 +150,12 @@ const Faq = () => {
                 content={faq.content}
                 activeTab={activeTab}
                 setActiveTab={setActiveTab}
-                className="justify-center"
+                className="justify-between gap-2 md:justify-center"
               />
             ))}
           </div>
 
-          <div className="col-span-3 space-y-3">
+          <div className="col-span-6 space-y-3 md:col-span-3">
             {faqs.slice(1, 5).map((faq) => (
               <AccordionItem
                 key={faq.id}
@@ -139,7 +168,7 @@ const Faq = () => {
             ))}
           </div>
 
-          <div className="col-span-3 space-y-3">
+          <div className="col-span-6 space-y-3 md:col-span-3">
             {faqs.slice(5).map((faq) => (
               <AccordionItem
                 key={faq.id}

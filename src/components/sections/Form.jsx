@@ -32,26 +32,35 @@ const Form = () => {
         <div className="w-full p-4 mx-auto bg-[#f5f5f5] rounded-none shadow-2xl md:rounded-2xl md:p-8 dark:bg-black">
           <div>
             <h2 className="text-black text-center text-2xl lg:text-[2rem] font-bold font-kallisto">
-              Discutons de Votre Projet Digital
+              Discutons de Votre Projet Digital !
             </h2>
           </div>
-          <div className="flex flex-col justify-between gap-8 pt-12 md:flex-row">
-            <div className="w-full">
-            <p className="max-w-sm text-sm text-neutral-600 dark:text-neutral-300">
-              Login to Aceternity if you can because we don't have a login flow
-              yet
-            </p>
-              
+          <div className="flex flex-col gap-8 pt-12 md:flex-row">
+            <div className="flex flex-row md:flex-col md:h-[200px] items-center justify-around w-full text-xl h-[70px]">
+              <div className="">
+                <p className="text-lg font-medium text-center uppercase md:text-xl">Par email</p>
+                <p className="text-lg text-center">contact@hexweb.fr</p>
+              </div>
+              <div>
+                <p className="text-lg font-medium text-center uppercase md:text-xl">
+                  par le formulaire
+                </p>
+                <p className="text-lg text-center">description du temp de réponse </p>
+              </div>
+              <div>
+                <p className="text-lg font-medium text-center uppercase md:text-xl">Horaires</p>
+                <p className="text-lg text-center ">Lundi-Vendredi, 8h-17h </p>
+              </div>
             </div>
             <div className="w-full">
-
-              <form className="" onSubmit={handleSubmit}>
-                <div className="flex flex-col w-full h-10 gap-4 mb-8 md:flex-row">
+              <form className="flex flex-col" onSubmit={handleSubmit}>
+                <div className="flex flex-col w-full h-auto gap-8 mb-8 md:flex-row">
                   <LabelInputContainer className="h-full">
                     <div className="relative">
                       <input
                         id="name"
                         placeholder=" "
+                        required
                         type="text"
                         className="w-full h-10 px-3 pt-2 text-sm bg-transparent border border-gray-300 border-solid input peer focus:outline-none focus:border-blue-500"
                       />
@@ -68,6 +77,7 @@ const Form = () => {
                     <div className="relative">
                       <input
                         id="firstname"
+                        required
                         placeholder=" "
                         type="text"
                         className="w-full h-10 px-3 pt-2 text-sm bg-transparent border border-gray-300 input peer focus:outline-none focus:border-blue-500"
@@ -86,6 +96,7 @@ const Form = () => {
                   <div className="relative">
                     <input
                       id="email"
+                      required
                       placeholder=" "
                       type="email"
                       className="w-full h-10 px-3 pt-2 text-sm bg-transparent border border-gray-300 input peer focus:outline-none focus:border-blue-500"
@@ -120,6 +131,7 @@ const Form = () => {
                   <div className="relative">
                     <textarea
                       id="message"
+                      required
                       placeholder=" "
                       className="w-full h-24 px-3 pt-2 text-sm bg-transparent border border-gray-300 resize-none input peer focus:outline-none focus:border-blue-500"
                     ></textarea>
