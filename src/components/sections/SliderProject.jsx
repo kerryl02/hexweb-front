@@ -1,3 +1,4 @@
+/* TODO: Exporté la list des projet et faire un .map pour récupérer la liste et faire moin de code*/
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules'
 import slide_img from "../../assets/image/project/projet1.jpg"

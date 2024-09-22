@@ -1,3 +1,6 @@
+/**TODO: Finir le code et fix le responsive et design
+ */
+
 import Section from "./Section"
 import teamImg from "@assets/team.jpg"
 

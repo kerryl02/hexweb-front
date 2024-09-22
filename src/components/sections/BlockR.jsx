@@ -1,3 +1,5 @@
+/**TODO: Fix les bug des responsive et revoir le design */
+
 import Section from "./Section";
 import teamImg from "@assets/team.jpg";
 import ButtonCta from "@components/ButtonCta";

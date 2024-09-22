@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-
+/* TODO: Exporter la list faqs et bien géré le .slice.map psk c'est de la merde */
 import React, { useState, useRef } from "react";
 import Section from "./Section";
 

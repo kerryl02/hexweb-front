@@ -1,3 +1,7 @@
+/**
+ * Fix le gros bug et finir le usermenu
+ */
+
 import { hamburger } from "@assets/icons";
 import { useState, useCallback } from "react";
 import { navLinks } from "@constants";
