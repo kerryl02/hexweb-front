@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 
 const SliderProject = () => {
   return (
-    <Section className="!px-0 max-w-none">
+    <Section className="!px-0 max-w-none"> 
       <div className="container">
         <h2 className="text-black text-center text-2xl lg:text-[2rem] font-bold font-kallisto">
           Découvrez Nos Projets qui Transforment le Digital
