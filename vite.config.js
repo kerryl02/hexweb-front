@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 import { ViteMinifyPlugin } from 'vite-plugin-minify'
 
 export default defineConfig({
@@ -9,11 +10,11 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@components': '/src/components',
-      '@sections': '/src/components/sections',
-      '@navbar': '/src/components/navbar',
-      '@constants': '/src/constants',
-      '@assets': '/src/assets'
+      '@components': path.resolve(__dirname, './src/components'),
+      '@sections': path.resolve(__dirname, './src/components/sections'),
+      '@navbar': path.resolve(__dirname, './src/components/navbar'),
+      '@constants': path.resolve(__dirname, './src/constants'),
+      '@assets': path.resolve(__dirname, './src/assets')
     },
   },
   build: {

@@ -1,79 +1,77 @@
 //import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/";
 //import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
-
+import { project1, project2, project3 } from "../assets/image/project";
 export const navLinks = [
-    { href: "#about-us", label: "Services Digitaux", link: "/Services" },
-    { href: "#pricings", label: "Tarification", link: "/Tarification" },
-    { href: "#about-us", label: "Références", link: "/Références" },
-    { href: "#products", label: "Contact", link: "/Contact" },
-    { href: "#Création-de-Sites-Web-sur-Mesure", label: "Création de Sites Web sur Mesure", link: "/Contact" },
-    { href: "#Refonte-de-Sites-Web-Performants", label: "Refonte de Sites Web Performants", link: "/Contact" },
-    { href: "#Optimisation-SEO-et-Référencement-Naturel", label: "Optimisation SEO et Référencement Naturel", link: "/Contact" },
-    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "Maintenance et Sécurité de Sites Web", link: "/Contact" },
-    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "Nos Accompagnement Web", link: "/Contact" },
-    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "1", link: "/Contact" },
-    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "2", link: "/Contact" },
-    { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "3", link: "/Contact" },
+  { href: "#about-us", label: "Services Digitaux", link: "/Services" },
+  { href: "#pricings", label: "Tarification", link: "/Tarification" },
+  { href: "#about-us", label: "Références", link: "/Références" },
+  { href: "#products", label: "Contact", link: "/Contact" },
+  {
+    href: "#Création-de-Sites-Web-sur-Mesure",
+    label: "Création de Sites Web sur Mesure",
+    link: "/Contact",
+  },
+  {
+    href: "#Refonte-de-Sites-Web-Performants",
+    label: "Refonte de Sites Web Performants",
+    link: "/Contact",
+  },
+  {
+    href: "#Optimisation-SEO-et-Référencement-Naturel",
+    label: "Optimisation SEO et Référencement Naturel",
+    link: "/Contact",
+  },
+  {
+    href: "#Maintenance-et-Sécurité-de-Sites-Web",
+    label: "Maintenance et Sécurité de Sites Web",
+    link: "/Contact",
+  },
+  {
+    href: "#Maintenance-et-Sécurité-de-Sites-Web",
+    label: "Nos Accompagnement Web",
+    link: "/Contact",
+  },
+  {
+    href: "#Maintenance-et-Sécurité-de-Sites-Web",
+    label: "1",
+    link: "/Contact",
+  },
+  {
+    href: "#Maintenance-et-Sécurité-de-Sites-Web",
+    label: "2",
+    link: "/Contact",
+  },
+  {
+    href: "#Maintenance-et-Sécurité-de-Sites-Web",
+    label: "3",
+    link: "/Contact",
+  },
 ];
 
 export const projects = [
-    {
-      title: "Project 1",
-      link: "/src/assets/image/1",
-      thumbnail: "https://cdn.prod.website-files.com/615f5935af74848be6f33e1f/6356f474040e32fada16cadd_image1.png",
-    },
-    {
-      title: "Project 2",
-      link: "/projects/project-2",
-      thumbnail: "https://images.prismic.io/prismic-main/65bbc9dd615e73009ec43469_2prismicLMSapp.png?auto=format,compress",
-    },
-    {
-      title: "Project 3",
-      link: "/projects/project-3",
-      thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    {
-        title: "Project 3",
-        link: "/projects/project-3",
-        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    {
-        title: "Project 3",
-        link: "/projects/project-3",
-        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    {
-        title: "Project 3",
-        link: "/projects/project-3",
-        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    {
-        title: "Project 3",
-        link: "/projects/project-3",
-        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    {
-        title: "Project 3",
-        link: "/projects/project-3",
-        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    {
-        title: "Project 3",
-        link: "/projects/project-3",
-        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    {
-        title: "Project 3",
-        link: "/projects/project-3",
-        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    {
-        title: "Project 3",
-        link: "/projects/project-3",
-        thumbnail: "https://cdn.hashnode.com/res/hashnode/image/upload/v1615547281917/uUoNnHwPc.png?auto=compress,format&format=webp",
-    },
-    // Add more projects as needed
-  ];
+  {
+    index: "1",
+    title: "qfsdfqsfsqf",
+    to: project1,
+    link:
+      "https://cdn.prod.website-files.com/615f5935af74848be6f33e1f/6356f474040e32fada16cadd_image1.png",
+  },
+  {
+    index: "2",
+    title: "qsfffqsfqs",
+    to: project2,
+    link:
+      "https://images.prismic.io/prismic-main/65bbc9dd615e73009ec43469_2prismicLMSapp.png?auto=format,compress",
+  },
+  {
+    index: "3",
+    title: "sqfffsq",
+    to: project3,
+    link:
+      "https://portfolio-kappa-beryl-47.vercel.app/",
+  },
+  // Add more projects as needed
+];
 
 /*export const statistics = [
     { value: '1k+', label: 'Brands' },
