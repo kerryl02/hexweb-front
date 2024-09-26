@@ -65,7 +65,7 @@ export const projects = [
   },
   {
     index: "3",
-    title: "sqfffsq",
+    title: "titre 3",
     to: project3,
     link:
       "https://portfolio-kappa-beryl-47.vercel.app/",
