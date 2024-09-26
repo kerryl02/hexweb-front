@@ -42,8 +42,8 @@ const SliderProject = () => {
                 <SwiperSlide key={index}>
                     <Link to={item.link}>
                     <div>
-                        <div className="flex justify-center items-end absolute bottom-[49px] left-[-1px] rounded-b-3xl bg-gradient-to-t from-black to-transparent w-full h-52">
-                            <h3 className="font-nunito-sans font-bold text-white">{item.title}</h3>
+                        <div className="flex justify-center items-end absolute bottom-[49px] left-[-1px] rounded-b-3xl bg-gradient-to-t from-black to-transparent w-full h-52 pb-10 px-10">
+                            <h3 className="text-center font-nunito-sans font-medium text-white">{item.title}</h3>
                         </div>
                         <img src={item.to} alt={`Projet ${index}`} />
                     </div>
