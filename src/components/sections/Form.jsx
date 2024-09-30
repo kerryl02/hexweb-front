@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unescaped-entities */
-// SignupFormDemo.jsx
+
+import React, { useState } from "react";
+import axios from "axios";
 import Section from "./Section";
 
 const LabelInputContainer = ({ children, className = "" }) => {
@@ -21,9 +21,36 @@ const BottomGradient = () => {
 };
 
 const Form = () => {
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    firstname: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted");
+
+    try {
+      setStatus("Envoi en cours...");
+      
+      const response = await axios.post("http://localhost:5000/api/contact", formData);  // Assure-toi de mettre l'URL de ton backend
+      if (response.status === 200) {
+        setStatus("Message envoyé avec succès !");
+        setFormData({ name: "", firstname: "", email: "", phone: "", message: "" });
+      }
+    } catch (error) {
+      setStatus("Erreur lors de l'envoi. Veuillez réessayer.");
+    }
   };
 
   return (
@@ -59,8 +86,9 @@ const Form = () => {
                     <div className="relative">
                       <input
                         id="name"
+                        value={formData.name}
                         placeholder=" "
-                        required
+                        onChange={handleChange}
                         type="text"
                         className="w-full h-10 px-3 pt-2 text-sm bg-transparent border border-gray-300 border-solid input peer focus:outline-none focus:border-blue-500"
                       />
@@ -77,8 +105,10 @@ const Form = () => {
                     <div className="relative">
                       <input
                         id="firstname"
-                        required
+                        value={formData.firstname}
+                        
                         placeholder=" "
+                        onChange={handleChange}
                         type="text"
                         className="w-full h-10 px-3 pt-2 text-sm bg-transparent border border-gray-300 input peer focus:outline-none focus:border-blue-500"
                       />
@@ -96,8 +126,10 @@ const Form = () => {
                   <div className="relative">
                     <input
                       id="email"
-                      required
+                      value={formData.email}
+                     
                       placeholder=" "
+                      onChange={handleChange}
                       type="email"
                       className="w-full h-10 px-3 pt-2 text-sm bg-transparent border border-gray-300 input peer focus:outline-none focus:border-blue-500"
                     />
@@ -115,6 +147,8 @@ const Form = () => {
                     <input
                       id="phone"
                       placeholder=" "
+                      value={formData.phone}
+                      onChange={handleChange}
                       type="text"
                       className="w-full h-10 px-3 pt-2 text-sm bg-transparent border border-gray-300 input peer focus:outline-none focus:border-blue-500"
                     />
@@ -131,8 +165,10 @@ const Form = () => {
                   <div className="relative">
                     <textarea
                       id="message"
-                      required
+                      
                       placeholder=" "
+                      value={formData.message}
+                      onChange={handleChange}
                       className="w-full h-24 px-3 pt-2 text-sm bg-transparent border border-gray-300 resize-none input peer focus:outline-none focus:border-blue-500"
                     ></textarea>
                     <label
@@ -154,6 +190,7 @@ const Form = () => {
 
                 <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mt-8 h-[1px] w-full" />
               </form>
+              <p>{status}</p>
             </div>
           </div>
         </div>
