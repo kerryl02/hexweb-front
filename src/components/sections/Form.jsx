@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Section from "./Section";
 
+
 const LabelInputContainer = ({ children, className = "" }) => {
   return (
     <div className={`relative flex flex-col space-y-2 w-full ${className}`}>
@@ -41,9 +42,13 @@ const Form = () => {
     e.preventDefault();
     setStatus("");
 
+    const backendUrl = import.meta.env.MODE === 'production' 
+  ? 'https://hexweb.fr' 
+  : 'http://localhost:5000';
+
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/contact",
+        `${backendUrl}/api/contact`,
         formData
       ); // Assure-toi de mettre l'URL de ton backend
       if (response.status === 200) {
