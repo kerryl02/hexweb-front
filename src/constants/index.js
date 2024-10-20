@@ -2,30 +2,18 @@
 //import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 import { project1, project2, project3 } from "../assets/image/project";
 export const navLinks = [
-  { href: "#about-us", label: "Services Digitaux", link: "/Services" },
-  { href: "#pricings", label: "Tarification", link: "/Tarification" },
-  { href: "#about-us", label: "Références", link: "/Références" },
-  { href: "#products", label: "Contact", link: "/Contact" },
-  {
-    href: "#Création-de-Sites-Web-sur-Mesure",
-    label: "Création de Sites Web sur Mesure",
-    link: "/Contact",
-  },
-  {
-    href: "#Refonte-de-Sites-Web-Performants",
-    label: "Refonte de Sites Web Performants",
-    link: "/Contact",
-  },
-  {
-    href: "#Optimisation-SEO-et-Référencement-Naturel",
-    label: "Optimisation SEO et Référencement Naturel",
-    link: "/Contact",
-  },
-  {
-    href: "#Maintenance-et-Sécurité-de-Sites-Web",
-    label: "Maintenance et Sécurité de Sites Web",
-    link: "/Contact",
-  },
+  { href: "#about-us", label: "Services Digitaux", link: "/services" },
+  { href: "#pricings", label: "Tarification", link: "/tarification" },
+  { href: "#about-us", label: "Références", link: "/références" },
+  { href: "#about-us", label: "Web & Business", link: "/web-business" },
+  { href: "#products", label: "Contact", link: "/contact" },
+
+  // Service
+  { href: "#Création-de-Sites-Web-sur-Mesure", label: "Création de Sites Web sur Mesure", link: "/services/creation-site-web" },
+  { href: "#Refonte-de-Sites-Web-Performants", label: "Refonte de Sites Web Performants", link: "/services/refonte-site-web" },
+  { href: "#Optimisation-SEO-et-Référencement-Naturel", label: "Optimisation SEO et Référencement Naturel", link: "/services/optimisation-seo" },
+  { href: "#Maintenance-et-Sécurité-de-Sites-Web", label: "Maintenance et Sécurité de Sites Web", link: "/services/maintenance-securite" },
+  // autre service
   {
     href: "#Maintenance-et-Sécurité-de-Sites-Web",
     label: "Nos Accompagnement Web",
