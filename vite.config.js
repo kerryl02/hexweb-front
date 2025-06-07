@@ -17,7 +17,17 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, './src/assets')
     },
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://hexweb.fr', // L'URL de ton backend
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''), // Réécrire le chemin si nécessaire
+      },
+    },
+  },
   build: {
+    target: 'es2015',
     rollupOptions: {
       // Configuration de Rollup pour minifier JS et CSS (déjà par défaut)
       output: {
