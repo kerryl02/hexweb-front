@@ -56,11 +56,8 @@ const Form = () => {
         });
       }
     } catch (error) {
-      if (error.response && error.response.data.errors) {
-        setErrors(error.response.data.errors);
-      } else {
-        setErrors([{ msg: "Une erreur est survenue." }]);
-      }
+      console.error('Erreur Nodemailer:', error);
+      res.status(500).json({ message: 'Erreur lors de l\'envoi de l\'email', error: error.message });
     }
   };
 
