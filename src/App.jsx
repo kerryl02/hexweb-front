@@ -1,15 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './Pages/HomePage';
-import Services from './Pages/Services';
-import Tarification from './Pages/Tarification';
-import Références from './Pages/Références';
-import Contact from './Pages/Contact';
-import CityPage from './Pages/CityPage';
-import BlogPage from './Pages/BlogPage';
-import CreationSiteWeb from './Pages/services/CreationSiteWeb';
-import RefonteSiteWeb from './Pages/services/RefonteSiteWeb';
-import OptimisationSEO from './Pages/services/OptimisationSEO';
-import MaintenanceSecurite from './Pages/services/MaintenanceSecurite';
+import HomePage from '@modules/home/HomePage';
+import Services from '@modules/services/Services';
+import Tarification from '@modules/tarification/Tarification';
+import Références from '@modules/references/Références';
+import Contact from '@modules/contact/Contact';
+import BlogPage from '@modules/blog/BlogPage';
+import CreationSiteWeb from '@modules/services/PagesServices/1/CreationSiteWeb';
+import RefonteSiteWeb from '@modules/services/PagesServices/4/RefonteSiteWeb';
+import OptimisationSEO from '@modules/services/PagesServices/3/OptimisationSEO';
+import MaintenanceSecurite from '@modules/services/PagesServices/2/MaintenanceSecurite';
 
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
         <Route path="/références" element={<Références />} />
         <Route path="/web-business" element={<BlogPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/conception-web/:city" element={<CityPage />} />
       </Routes>
     </Router>
   )
