@@ -48,7 +48,12 @@ export default async function handler(req, res) {
     await transporter.sendMail(mailOptions);
     return res.status(200).json({ msg: 'Message envoyé avec succès.' });
   } catch (error) {
-    console.error('Erreur lors de l\'envoi de l\'email:', error);
-    return res.status(500).json({ message: 'Erreur lors de l\'envoi de l\'email' });
-  }
+  console.error('Erreur complète Nodemailer :', error);
+  res.status(500).json({
+    message: "Erreur lors de l'envoi de l'email",
+    error: error.message, // Ajoute ce détail
+    stack: error.stack,   // Optionnel pour avoir plus d’info
+  });
+}
+
 }
