@@ -42,15 +42,8 @@ const Form = () => {
     e.preventDefault();
     setStatus("");
 
-    const backendUrl = import.meta.env.MODE === 'production' 
-  ? 'https://hexweb.fr' 
-  : 'http://localhost:5000';
-
     try {
-      const response = await axios.post(
-        `${backendUrl}/api/contact`,
-        formData
-      ); // Assure-toi de mettre l'URL de ton backend
+      const response = await axios.post('/api/contact', formData);
       if (response.status === 200) {
         setStatus("Message envoyé avec succès !");
         setErrors([]);
