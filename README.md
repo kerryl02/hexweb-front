@@ -28,6 +28,29 @@ HexWeb Frontend est le frontend de ton projet web (HexWeb), construit avec React
 - Un build optimisé pour la production
 
 ---
+## 🎯 Problèmes & Solutions
+
+### 1. Lenteur avec CRA
+- ❌ CRA rendait les builds lourds et lents.  
+- ✅ Migration vers **Vite** → builds rapides, HMR instantané.  
+
+### 2. Structure de code difficile à scaler
+- ❌ Organisation dispersée des composants.  
+- ✅ Mise en place d’une **architecture modulaire** : `components/`, `pages/`, `assets/`.  
+
+### 3. CSS peu maintenable
+- ❌ Styles classiques peu cohérents.  
+- ✅ Adoption de **TailwindCSS** → design system rapide et uniforme.  
+
+### 4. Qualité de code non garantie
+- ❌ Bugs et incohérences non détectés.  
+- ✅ **ESLint + Prettier** → qualité et lisibilité renforcées.  
+
+### 5. Déploiement manuel
+- ❌ Risque d’erreurs, perte de temps.  
+- ✅ **CI/CD avec Vercel** → déploiement automatique à chaque commit.  
+
+---
 
 ##  Stack technique
 
@@ -38,7 +61,7 @@ HexWeb Frontend est le frontend de ton projet web (HexWeb), construit avec React
 | Qualité du code        | ESLint                                |
 | Styles                 | Tailwind CSS via PostCSS              |
 | Configurations         | vite.config.js, tailwind.config.js    |
-| Déploiement            | Vercel (ou ton hébergement choisi)    |
+| Déploiement            | Vercel                                |
 
 ---
 
